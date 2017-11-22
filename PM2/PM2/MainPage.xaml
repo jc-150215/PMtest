@@ -4,10 +4,45 @@
              xmlns:local="clr-namespace:PM2"
              x:Class="PM2.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+            <Label Text="推定PM"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+
+                <Label Text="重さ(kg)"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />
+
+                <Entry x:Name="Weight"
+                       Text="        "
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+
+                <Label Text="回数"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+
+                <Entry x:Name="Views"
+                       Text="        "
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+
+            </StackLayout>
+
+            <Button Text="計算"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked" />
+
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
